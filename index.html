@@ -1,1 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM05-Optimizado</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 9 - 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> Utilizar la Smart A.I. Lens con su Cutebot para reconocer tarjetas de color y comprender que esta capacidad proviene del Aprendizaje Automático con modelos pre-entrenados.</p>
+                    </div>
+                </div>
+
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Recurso de Respaldo: Prompt de XOLO</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">Prompt de emergencia (XOLO ya conoce el tema, usar solo si es necesario):</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Actúa como experto en IA y robótica. Enséñame qué es el aprendizaje automático y cómo usar la Smart AI Lens para reconocer colores con el Cutebot. Guíame paso a paso.</pre>
+                    </div>
+                </div>
+
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Modelos pre-entrenados: La IA ya sabe reconocer colores sin que los estudiantes la entrenen manualmente.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Configurar la A.I. Lens en MakeCode para detectar colores específicos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes colores y condiciones de luz para entender los límites de la IA.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO guiará el aprendizaje de forma autónoma. El maestro gestiona el tiempo y la logística.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Robots Cutebot (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Smart A.I. Lens (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Micro:bits con baterías cargadas</label>
+                        <label><input type="checkbox"> Acceso a MakeCode con extensión A.I. Lens instalada</label>
+                        <label><input type="checkbox"> Tarjetas de colores (rojo, azul, verde, negro, blanco)</label>
+                    </div>
+                </div>
+
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión (I Can Statement)</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida y establecimiento de objetivos con PNL.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym (Aprendizaje Directo)</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>XOLO guía el aprendizaje sobre IA y visión artificial.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark (Creación)</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Ideación y programación de la solución con apoyo de XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM (Compartir)</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas (Think-Pair-Share).</p>
+                            </div>
+                        </div>
+                         <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Cierre y subida de evidencias a Gnius Space.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
+            <div class="activity-card" id="activity-1">
+                <div class="activity-header">
+                    <h2>👋 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
+                    </div>
+                </div>
+
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Presentar la misión con entusiasmo.</li>
+                            <li>Establecer el "I Can Statement": "Hoy seré capaz de usar IA para que mi robot reconozca colores".</li>
+                            <li>Proyectar diapositiva 1 con los objetivos visuales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está preparado esperando a que el alumno inicie el chat.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Ingresar a Gnius Space y localizar la misión 9.</li>
+                            <li>Interiorizar el objetivo de aprendizaje (I Can Statement).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: Misión Visual</h4>
+                    <div class="slide-content">
+                        <p><strong>I CAN STATEMENT:</strong></p>
+                        <p class="highlight-text">"Yo puedo darle 'visión IA' a mi Cutebot para que reconozca colores y tome decisiones."</p>
+                        <p><strong>¿Sabías que...?</strong> Los robots de reciclaje usan esta misma IA para separar plástico de vidrio por su color.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDAD 2: A.I. GYM -->
+            <div class="activity-card" id="activity-2">
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
+                    </div>
+                </div>
+
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Indicar a los alumnos que abran el chat con XOLO.</li>
+                            <li>Explicar que XOLO ya conoce la misión y comenzará a enseñarles sobre el aprendizaje automático.</li>
+                            <li>Supervisar que todos inicien la conversación activamente.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>Saluda al alumno por su nombre y reconoce su perfil.</li>
+                            <li>Explica de forma personalizada cómo la Smart AI Lens usa modelos pre-entrenados para "ver" colores.</li>
+                            <li>Interactúa para asegurar que el concepto de Aprendizaje Automático quede claro.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat de XOLO y responder a su introducción.</li>
+                            <li>Aprender sobre el funcionamiento de la visión artificial y la IA.</li>
+                            <li>Preguntar a XOLO cualquier duda sobre cómo la cámara diferencia el rojo del azul.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>🚀 ¡Inicia tu conversación con XOLO!</strong></p>
+                        <p>No necesitas escribir un prompt largo. XOLO ya sabe quién eres y qué vamos a aprender hoy.</p>
+                        <div class="prompt-box" style="background-color: #f0f0f0;">
+                           <p style="font-style: italic; color: #666;">Nota para el alumno: Solo saluda a XOLO y él te guiará en el mundo del aprendizaje automático.</p>
+                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">🎯 Objetivo: Entender cómo la IA aprende a reconocer patrones de color.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Genial! XOLO ya los está esperando. Simplemente entren al chat y él comenzará a explicarles cómo es que el Smart AI Lens puede ser tan inteligente. XOLO sabe sus nombres y lo que les gusta, así que el aprendizaje será súper divertido. ¡Adelante!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
+            <div class="activity-card" id="activity-3">
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyectar la diapositiva 3.</li>
+                            <li>Indicar: "Pidan a XOLO que les ayude a diseñar su código para el Cutebot".</li>
+                            <li>Entregar los kits de robótica a quienes ya tengan clara la lógica de su programa.</li>
+                            <li>Apoyar en la conexión física del AI Lens al puerto I2C del Cutebot.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>Sugiere un proyecto creativo basado en los intereses del alumno (ej: un robot que baila si ve verde o se detiene si ve rojo).</li>
+                            <li>Entrega el Guion de Código Sugerido (GCS) adaptado.</li>
+                            <li>Ayuda a depurar errores cuando el alumno pasa el código a MakeCode.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Conversar con XOLO para definir qué hará su robot al detectar colores.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Descargar el programa al micro:bit y realizar pruebas con las tarjetas de colores.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 🛠️ Crea con XOLO:</strong></p>
+                        <p>Pídele que te ayude a crear un programa donde tu Cutebot reaccione a distintos colores de tus tarjetas.</p>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Desafío de Experimentación:</strong></p>
+                        <ul>
+                            <li>¿Qué pasa si la tarjeta está muy lejos?</li>
+                            <li>¿Puede distinguir el azul del verde con poca luz?</li>
+                            <li>¿Qué ocurre si muestras dos colores al mismo tiempo?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Es momento de darle vida a su robot. XOLO les dará una idea genial basada en su perfil. Sigan sus instrucciones para armar el código en MakeCode. Una vez que su Cutebot "tenga ojos", pónganlo a prueba: ¿realmente obedece a los colores? ¡Vamos a experimentar!</p>
+                    </div>
+                </div>
+
+                <div class="challenge-prompt">
+                    <h4>🚀 Desafío Extra</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si terminas rápido, dile a XOLO:</strong></p>
+                        <p class="challenge-text">"XOLO, mi robot ya reconoce colores. ¿Cómo puedo hacer que use sus luces LED para brillar del mismo color que la tarjeta que está viendo?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organizar el Think-Pair-Share: los alumnos se muestran sus robots en acción.</li>
+                            <li>Hacer preguntas de cierre: "¿Es perfecto el ojo de la IA? ¿Cuándo se equivoca?".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO observa el cierre y queda disponible para dudas finales de los alumnos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demostrar su proyecto a un compañero.</li>
+                            <li>Explicar qué fue lo más difícil de lograr.</li>
+                            <li>Escuchar y aprender del descubrimiento de otro compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                         <div class="tps-phase">
+                            <h4>🤔 THINK</h4>
+                            <p>¿Cómo cambió el comportamiento de mi Cutebot ahora que tiene visión IA?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR</h4>
+                            <p>Muestra tu robot a tu pareja y comparen: ¿Cuál reconoció los colores más rápido?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE</h4>
+                            <p>Compartan con el grupo un límite que hayan encontrado en la cámara (distancia, luz, etc).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Supervisar que todos tomen las capturas necesarias.</li>
+                            <li>Felicitar a los alumnos por completar la Misión 9.</li>
+                            <li>Asegurarse de que el equipo quede bien guardado.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>Se despide de los alumnos recordándoles lo mucho que aprendieron hoy.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código final en MakeCode.</li>
+                            <li>Tomar screenshot de la parte más interesante de su charla con XOLO.</li>
+                            <li>Subir archivos y presionar "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Evidencias para tu Portafolio:</strong></p>
+                        <ol>
+                            <li>Captura de tu <strong>Código en Bloques</strong>.</li>
+                            <li>Captura de tu <strong>Conversación con XOLO</strong>.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡Has desbloqueado el poder de la Visión Artificial! Nos vemos en la próxima misión.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
